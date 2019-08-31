@@ -20,15 +20,17 @@ function addMain(add) {
             <h3 class="active" id="projects">projects</h3>
             <p class="bold">Hi! My name is Leon, and I'm a full-stack web developer.</p>
             <p>Cras vitae augue volutpat risus gravida tincidunt. Suspendisse et tincidunt lorem. Praesent molestie mattis sem, rhoncus fermentum mi placerat ut. Etiam eu sapien lacus. Donec pretium cursus nisi, eu dictum purus efficitur quis. </p>
+            <p class="bold">Hi! My name is Leon, and I'm a full-stack web developer.</p>
+            <p>Cras vitae augue volutpat risus gravida tincidunt. Suspendisse et tincidunt lorem. Praesent molestie mattis sem, rhoncus fermentum mi placerat ut. Etiam eu sapien lacus. Donec pretium cursus nisi, eu dictum purus efficitur quis. </p>
+            <p class="bold">Hi! My name is Leon, and I'm a full-stack web developer.</p>
+            <p>Cras vitae augue volutpat risus gravida tincidunt. Suspendisse et tincidunt lorem. Praesent molestie mattis sem, rhoncus fermentum mi placerat ut. Etiam eu sapien lacus. Donec pretium cursus nisi, eu dictum purus efficitur quis. </p>
+            <p class="bold">Hi! My name is Leon, and I'm a full-stack web developer.</p>
+            <p>Cras vitae augue volutpat risus gravida tincidunt. Suspendisse et tincidunt lorem. Praesent molestie mattis sem, rhoncus fermentum mi placerat ut. Etiam eu sapien lacus. Donec pretium cursus nisi, eu dictum purus efficitur quis. </p>
+
         </article>
         <article class="information">
         <h3 class="active" id="contact">contact</h3>
         <p>I would be thrilled to write, call, or video chat about any job opportunities. Feel free to contact me through any method below.</p>
-        <ul id="contacts">
-            <li>github</li>
-            <li>linkedIn</li>
-            <li>email</li>
-            <li>skype</li>
     </article>
     <footer id="final-links">
         <ul id="contact-links">
@@ -36,7 +38,13 @@ function addMain(add) {
             <li id="linkedin-link"><a href="#"><img src="linkedin.png" alt="LinkedIn" /></a></li>
             <li id="email-link"><a href="mailto:leondailofficial@gmail.com"><img src="email.png" alt="Email" /></a></li>
         </ul>
-    </footer>`
+    <img src="easteregg.png" id="easter-egg" alt="easter egg" />
+    </footer>
+    <div id="easter-div">
+    <h5>You found the secret easter egg!</h5>
+    <h6>Click below to activate!</h6>
+    <img src="easteregg.png" id="second-easter-egg" alt="easter egg" />
+    </div>`
     );
     $('main').fadeIn();
     $('.inactive').text('projects');
@@ -49,7 +57,7 @@ function fillNav(add) {
       `<ul>
       <li><a href="#bio">bio</a></li>
       <li><a href="#projects">projects</a></li>
-      <li><a href="contact">contact</a></li>
+      <li><a href="#contact">contact</a></li>
       </ul>`);
   }
   else {
@@ -57,7 +65,7 @@ function fillNav(add) {
       `<ul>
         <li><a href="#bio">bio</a></li>
         <li><a href="#projects">projects</a></li>
-        <li><a href="contact">contact</a></li>
+        <li><a href="#contact">contact</a></li>
       </ul>`);
   }
 }
@@ -83,13 +91,8 @@ function ready() {
   showFirstPage();
   console.log($(window).scrollTop());
   $(window).scroll( function() {
-    if ($(this).scrollTop() > 0) {
-      if ($('body').hasClass('first')) {
-        showSecondPage();
-      }
-    }
-    else {
-      showFirstPage();
+    if ($('body').hasClass('first')) {
+      showSecondPage();
     }
   });
   $('nav').on('click','a', function(e) {
@@ -99,7 +102,19 @@ function ready() {
     let name = $(href);
     $('html,body').animate({scrollTop: name.offset().top-100},'slow');
   });
-  $('h1').on('click', e => showFirstPage());
+  $('body').on('click', 'h1', e => showFirstPage());
+  $('body').on('click', '#easter-egg', function(e) {
+    $('#easter-div').fadeIn('slow');
+    $('#second-easter-egg').css('transform', 'rotate(1080deg)').css('transition', '10s all');
+  });
+  $('body').on('click', '#second-easter-egg', e => {
+    $('*').css('transform', 'rotate(360deg)').css('transition', '10s all');
+    $('#easter-div').fadeOut();
+    setTimeout(function() {   //calls click event after a certain time
+      $('*').css('transform', '').css('transition', '.5s all');
+      showFirstPage();
+    }, 10000);
+  });
 }
 
 $(ready);
