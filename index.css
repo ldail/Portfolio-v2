@@ -17,6 +17,10 @@ body.first {
   height: 100px;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
 
 /* ------------------
 first page 
@@ -64,8 +68,6 @@ h1.first {
 }
 
 span.first {
-  display: flex;
-  flex-direction: column;
 }
 
 
@@ -73,7 +75,7 @@ span.first {
   display: flex;
   flex-direction: column;
   flex: 1;
-  color: #d9d0ee;
+  color: white;
 }
 
 h2.first {
@@ -187,6 +189,7 @@ h3.active, h3.inactive {
   background-color: #5d39f0;
   padding-bottom: 10px;
   border-bottom: 12px solid #ffe83d;
+  margin-bottom: 30px;
 }
 
 .information:not(:first-child) {
@@ -201,4 +204,24 @@ p.second {
   text-align: left;
   padding-left: 30px;
   padding-right: 30px;
+}
+
+
+.information ul {
+  margin: 10px 0px;
+}
+.information li {
+  color: white;
+  font-family: 'Asap', sans-serif;
+  line-height: 1.5em;
+  display: inline-block;
+
+}
+
+#skills {
+  margin: 20px 0px;
+}
+#skills img {
+  width: 30px;
+  padding: 0px 10px;
 }
