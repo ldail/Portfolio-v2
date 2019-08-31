@@ -207,10 +207,10 @@ p.second {
 }
 
 
-.information ul {
+.information ul, #contact-links ul {
   margin: 10px 0px;
 }
-.information li {
+.information li, #contact-links li {
   color: white;
   font-family: 'Asap', sans-serif;
   line-height: 1.5em;
@@ -221,7 +221,16 @@ p.second {
 #skills {
   margin: 20px 0px;
 }
-#skills img {
+#skills img, #contact-links img {
   width: 30px;
   padding: 0px 10px;
+}
+
+#final-links {
+  position: fixed;
+  bottom: 0;
+  background-color: #ffe83d;
+  padding: 5px;
+  color: #391f80;
+  width: 100%;
 }

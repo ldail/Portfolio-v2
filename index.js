@@ -1,4 +1,4 @@
-function addBio(add) {
+function addMain(add) {
   $('main').empty();
   $('.inactive').empty();
   if (add) {
@@ -20,7 +20,23 @@ function addBio(add) {
             <h3 class="active" id="projects">projects</h3>
             <p class="bold">Hi! My name is Leon, and I'm a full-stack web developer.</p>
             <p>Cras vitae augue volutpat risus gravida tincidunt. Suspendisse et tincidunt lorem. Praesent molestie mattis sem, rhoncus fermentum mi placerat ut. Etiam eu sapien lacus. Donec pretium cursus nisi, eu dictum purus efficitur quis. </p>
-        </article>`
+        </article>
+        <article class="information">
+        <h3 class="active" id="contact">contact</h3>
+        <p>I would be thrilled to write, call, or video chat about any job opportunities. Feel free to contact me through any method below.</p>
+        <ul id="contacts">
+            <li>github</li>
+            <li>linkedIn</li>
+            <li>email</li>
+            <li>skype</li>
+    </article>
+    <footer id="final-links">
+        <ul id="contact-links">
+            <li id="github-link"><a href="https://github.com/ldail"><img src="github.png" alt="GitHub" /></a></li>
+            <li id="linkedin-link"><a href="#"><img src="linkedin.png" alt="LinkedIn" /></a></li>
+            <li id="email-link"><a href="mailto:leondailofficial@gmail.com"><img src="email.png" alt="Email" /></a></li>
+        </ul>
+    </footer>`
     );
     $('main').fadeIn();
     $('.inactive').text('projects');
@@ -31,32 +47,25 @@ function fillNav(add) {
   if (!add) { //first page
     $('nav').html(
       `<ul>
-        <li>bio</li>
-        <li>projects</li>
-        <li>contact</li>
+      <li><a href="#bio">bio</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="contact">contact</a></li>
       </ul>`);
   }
   else {
     $('nav').html(
       `<ul>
-        <li><a href="#">bio</a></li>
-        <li><a href="#">projects</a></li>
-        <li>contact</li>
+        <li><a href="#bio">bio</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="contact">contact</a></li>
       </ul>`);
   }
-}
-
-function showThirdPage() {
-  $('h2').html('');
-  fillNav();
-  addProjects('add');
-  $('*').removeClass('first').addClass('second');
 }
 
 function showSecondPage() {
   $('h2').html('');
   fillNav();
-  addBio('add');
+  addMain('add');
   $('*').removeClass('first').addClass('second');
 }
 
@@ -64,7 +73,7 @@ function showFirstPage() {
   $('h1').html('leon<span>dail</span>');
   $('h2').html('full-stack <span>web developer</span>');
   fillNav('add');
-  addBio();
+  addMain();
   $('*').removeClass('second').addClass('first');
 }
 
@@ -77,7 +86,6 @@ function ready() {
     if ($(this).scrollTop() > 0) {
       if ($('body').hasClass('first')) {
         showSecondPage();
-        console.log($(this).scrollTop());
       }
     }
     else {
@@ -85,16 +93,13 @@ function ready() {
     }
   });
   $('nav').on('click','a', function(e) {
-    $(this).scrollView();
+    e.preventDefault();
+    let href = $(e.currentTarget).attr('href');
+    showSecondPage();
+    let name = $(href);
+    $('html,body').animate({scrollTop: name.offset().top-100},'slow');
   });
+  $('h1').on('click', e => showFirstPage());
 }
 
 $(ready);
-
-$.fn.scrollView = function () {
-  return this.each(function () {
-    $('html, body').animate({
-      scrollTop: $(this).offset().top
-    }, 1000);
-  });
-}
