@@ -35,16 +35,16 @@ function addMain(add) {
     </article>
     <footer id="final-links">
         <ul id="contact-links">
-            <li id="github-link"><a href="https://github.com/ldail"><img src="github.png" alt="GitHub" /></a></li>
-            <li id="linkedin-link"><a href="#"><img src="linkedin.png" alt="LinkedIn" /></a></li>
-            <li id="email-link"><a href="mailto:leondailofficial@gmail.com"><img src="email.png" alt="Email" /></a></li>
+            <li id="github-link"><a href="https://github.com/ldail"><img src="images/github.png" alt="GitHub" /></a></li>
+            <li id="linkedin-link"><a href="#"><img src="images/linkedin.png" alt="LinkedIn" /></a></li>
+            <li id="email-link"><a href="mailto:leondailofficial@gmail.com"><img src="images/email.png" alt="Email" /></a></li>
         </ul>
-    <img src="easteregg.png" id="easter-egg" alt="easter egg" />
+    <img src="images/easteregg.png" id="easter-egg" alt="easter egg" />
     </footer>
     <div id="easter-div">
     <h5>You found the secret easter egg!</h5>
     <h6>Click below to activate!</h6>
-    <img src="easteregg.png" id="second-easter-egg" alt="easter egg" />
+    <img src="images/easteregg.png" id="second-easter-egg" alt="easter egg" />
     </div>`
     );
     $('main').fadeIn();
