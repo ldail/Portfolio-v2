@@ -80,13 +80,13 @@ function addMain(add) {
     <img src="images/easteregg.png" id="second-easter-egg" alt="easter egg" />
     </div>`
     );
-    $('main').fadeIn();
+    $('main').fadeIn('slow');
     $('.inactive').text('projects');
   }
 }
 
 function fillNav(add) {
-  if (!add) { //first page
+  if (!add) { //initial loading page
     $('nav').html(
       `<ul>
       <li><a href="#bio">bio</a></li>
@@ -94,7 +94,7 @@ function fillNav(add) {
       <li><a href="#contact">contact</a></li>
       </ul>`);
   }
-  else {
+  else { //primary webpage (second)
     $('nav').html(
       `<ul>
         <li><a href="#bio">bio</a></li>
@@ -104,6 +104,8 @@ function fillNav(add) {
   }
 }
 
+
+//primary webpage with data
 function showSecondPage() {
   $('h2').html('');
   fillNav();
@@ -111,6 +113,7 @@ function showSecondPage() {
   $('*').removeClass('first').addClass('second');
 }
 
+//initial loading page
 function showFirstPage() {
   $('h1').html('leon<span>dail</span>');
   $('h2').html('full-stack <span>web developer</span>');
@@ -119,16 +122,16 @@ function showFirstPage() {
   $('*').removeClass('second').addClass('first');
 }
 
+function eventListeners() {
 
-function ready() {
-  $('*').addClass('first');
-  showFirstPage();
-  console.log($(window).scrollTop());
+  //load second page when the user scrolls
   $(window).scroll( function() {
     if ($('body').hasClass('first')) {
       showSecondPage();
     }
   });
+
+  //soft scroll to navigation location
   $('nav').on('click','a', function(e) {
     e.preventDefault();
     let href = $(e.currentTarget).attr('href');
@@ -136,7 +139,11 @@ function ready() {
     let name = $(href);
     $('html,body').animate({scrollTop: name.offset().top-100},'slow');
   });
+
+  //return to loading page
   $('body').on('click', 'h1', e => showFirstPage());
+
+  //easter egg listeners
   $('body').on('click', '#easter-egg', function(e) {
     $('#easter-div').fadeIn('slow');
     $('#second-easter-egg').css('transform', 'rotate(1080deg)').css('transition', '10s all');
@@ -149,6 +156,12 @@ function ready() {
       showFirstPage();
     }, 10000);
   });
+}
+
+function ready() {
+  $('*').addClass('first');
+  showFirstPage();
+  eventListeners();
 }
 
 $(ready);
