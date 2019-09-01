@@ -423,6 +423,7 @@ second desktop page
   .project-info .project-image-link {
     flex: 1;
     margin-left: 40px;
+    margin-top: 20px;
   }
 
   .project-info-text {
