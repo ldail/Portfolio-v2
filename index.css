@@ -229,6 +229,10 @@ p.second {
   width: 100%;
 }
 
+/*--------------------
+easter egg
+-------------------*/
+
 #easter-div {
   display: none;
   position: fixed;
@@ -263,4 +267,16 @@ h6 {
   margin-bottom: 30px;
   color: white;
   font-family: 'Asap', sans-serif;
+}
+
+
+/* -------------------------------
+desktop version
+-----------------------------*/
+
+
+@media screen and (min-width: 482px) {
+  h1.first {
+    background-color: black;
+  }
 }
