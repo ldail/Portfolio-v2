@@ -8,6 +8,7 @@ function addMain(add) {
             <p class="bold">Hi! My name is Leon, and I'm a full-stack web developer.</p>
             <p>I find myself most proud when I am able to solve a challenging problem. I am confident knowing that I can look at a question from all sides and execute the best solution.</p>
             <p>I have many years experience working with HTML and CSS. In the past, I was the designer and administrator of small, hobby websites, and taught myself how to keep a website running.</p>
+            <p>I love designing and creating games; I am always extremely eager to piece together board games, pen and paper games, and internet games alike and test my creativity.</p>
                 <ul id="skills">
                     <li id="skill-html"><img src="html5.png" alt="HTML 5" /></li>
                     <li id="skill-css"><img src="css.png" alt="CSS 3" /></li>
