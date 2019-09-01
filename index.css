@@ -85,7 +85,7 @@ h2.first {
   font-family: 'Playfair Display', serif;
   font-weight: 600;
   line-height: 1.5em;
-  background-color: #5d39f0;
+  background-color: #391f80;
   height: 20vh;
   display: flex;
   align-items: center;
@@ -94,7 +94,7 @@ h2.first {
 }
 
 nav.first {
-  background-color: #391f80;
+  background-color: #7F4DE8;
   flex: 1;
   display: flex;
   align-items: center;
@@ -164,7 +164,7 @@ nav.second ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  background-color: #5d39f0;
+  background-color: #7F4DE8;
   color: white;
   font-family: 'Montserrat', sans-serif;
   padding: 4px;
@@ -182,21 +182,21 @@ main.second {
 
 h3.active, h3.inactive {
   color: white;
-  background-color: #391f80;
+  background-color: #7F4DE8;
   font-size: 50px;
   height: 55px;
   font-family: 'Playfair Display', serif;
 }
 
 .information {
-  background-color: #5d39f0;
+  background-color: white;
   padding-bottom: 10px;
   border-bottom: 12px solid #ffe83d;
 }
 
 
 p.second {
-  color: white;
+  color: #391f80;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5em;
   padding-top: 10px;
@@ -233,7 +233,7 @@ p.second {
 }
 
 .project-name {
-  color: #ffe83d;
+  color: #391f80;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 30px;
@@ -245,7 +245,7 @@ p.second {
   color: white;
   font-weight: 100;
   font-size: 16px;
-  color: #ffe83d;
+  color: #391f80;
 }
 
 .project-image {
@@ -352,7 +352,7 @@ desktop version
 
   nav.first {
     margin: 30px 0px 70px 0px;
-    background-color: #5d39f0;
+    background-color: #7F4DE8;
     width: 50%;
     margin: 0 auto;
     margin-bottom: 30px;
