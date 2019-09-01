@@ -26,7 +26,7 @@ function addMain(add) {
                     <h4 class="project-name">Your Bookmarks</h4>
                     <h5 class="project-description">Keep tabs of your favorite websites</h5>
                     <ul class="view-code">
-                        <li class="github-code"><a href="https://github.com/thinkful-ei-gecko/leon-dail-bookmarks-app"><img src="images/github.png" alt="View on Github" /></a></li>
+                        <li class="github-code"><a href="https://github.com/thinkful-ei-gecko/leon-dail-bookmarks-app"><img src="images/github-purple.png" alt="View on Github" /></a></li>
                         <li class="deploy-code"><a href="https://thinkful-ei-gecko.github.io/leon-dail-bookmarks-app/"><img src="images/eye2.png" alt="View Deployment" /></a></li>
                     </ul>
                     <p>This web application allows a user to keep track of their favorite websites. The user can add, delete, and edit the bookmarked tabs, as well as display them by ranking.</p>
@@ -48,7 +48,7 @@ function addMain(add) {
                     <h4 class="project-name">Quiz Application</h4>
                     <h5 class="project-description">Test your knowledge about the quizmaker's choice!</h5>
                     <ul class="view-code">
-                        <li class="github-code"><a href="https://github.com/thinkful-ei-gecko/JamesJ-Leon-quiz-app"><img src="images/github.png" alt="View on Github" /></a></li>
+                        <li class="github-code"><a href="https://github.com/thinkful-ei-gecko/JamesJ-Leon-quiz-app"><img src="images/github-purple.png" alt="View on Github" /></a></li>
                         <li class="deploy-code"><a href="https://thinkful-ei-gecko.github.io/JamesJ-Leon-quiz-app/"><img src="images/eye2.png" alt="View Deployment" /></a></li>
                     </ul>
                     <p>Although originally designed as a small and fun Game of Thrones quiz application, the questions and styles can be ported to any topic by editing the database. This application is fully robust, and the contents can be easily changed for a variety of quizzes.</p>
