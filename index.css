@@ -186,9 +186,6 @@ h3.active, h3.inactive {
   border-bottom: 12px solid #ffe83d;
 }
 
-.information:not(:first-child) {
-  /* margin-top: 30px; */
-}
 
 p.second {
   color: white;
@@ -212,14 +209,47 @@ p.second {
 
 }
 
-#skills {
+.skills {
   margin: 20px 0px;
 }
-#skills img, #contact-links img {
+.skills img, #contact-links img {
   width: 30px;
   padding: 0px 10px;
 }
 
+.view-code img {
+  width: 60px;
+  padding: 0px 10px;
+}
+
+.project-name {
+  color: #ffe83d;
+  font-family: 'Asap', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  text-decoration: underline dotted;
+  margin: 20px 0px 5px 0px;
+}
+
+.project-description {
+  color: white;
+  font-weight: 100;
+  font-size: 16px;
+  color: #ffe83d;
+}
+
+.project-image {
+  width: 80%;
+  margin: 5px;
+}
+
+.project-info {
+  margin-bottom: 20px;
+}
+
+.project-info .skills img {
+  width: 22px;
+}
 #final-links {
   position: fixed;
   bottom: 0;
@@ -276,8 +306,15 @@ desktop version
 
 
 @media screen and (min-width: 482px) {
-  body.first {
+
+  html {
+    background: no-repeat center center fixed;
     background-image: radial-gradient(#ffe83d, #391f80);
+    background-size: cover;
+  }
+
+  body.first {
+    background: none;
   }
 
   .fullpage.first {
@@ -333,7 +370,7 @@ second desktop page
 -------------- */
 
   body.second {
-    background-image: radial-gradient(#ffe83d, #391f80);
+    background: none;
   }
 
   .fullpage.second {

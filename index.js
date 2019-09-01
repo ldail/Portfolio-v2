@@ -8,26 +8,51 @@ function addMain(add) {
             <p class="bold">Hi! My name is Leon, and I'm a full-stack web developer.</p>
             <p>I find myself most proud when I am able to solve a challenging problem. I am confident knowing that I can look at a question from all sides and execute the best solution.</p>
             <p>My experience with HTML, CSS, and coding goes back many years. In the past, I was the designer and administrator of small, hobby websites, and taught myself how to manage a community and all its coding needs (through trial-and-error, of course). I crafted many programs using a C-type language, and taught myself C++ as well. Now, I am exploring every avenue of JavaScript to further my abilities as a web developer.</p>
-            <p>My biggest passions are designing and creating games; I am always extremely eager to piece together board games, pen and paper games, and internet games alike and test my creativity.</p>
-                <ul id="skills">
-                    <li id="skill-html"><img src="images/html5.png" alt="HTML 5" /></li>
-                    <li id="skill-css"><img src="images/css.png" alt="CSS 3" /></li>
-                    <li id="skill-javascript"><img src="images/javascript.png" alt="JavaScript" /></li>
-                    <li id="skill-jQuery"><img src="images/jquery.png" alt="jQuery" /></li>
-                    <li id="skill-api"><img src="images/api.png" alt="API" /></li>
+            <p>My biggest passions are designing and creating games; I am always extremely eager to piece together board games, pen and paper games, and internet games alike and test my creativity. Another outlet for my creativity is writing stories!</p>
+                <ul class="skills">
+                    <li class="skill-html"><img src="images/html5.png" alt="HTML 5" /></li>
+                    <li class="skill-css"><img src="images/css.png" alt="CSS 3" /></li>
+                    <li class="skill-javascript"><img src="images/javascript.png" alt="JavaScript" /></li>
+                    <li class="skill-jQuery"><img src="images/jquery.png" alt="jQuery" /></li>
+                    <li class="skill-api"><img src="images/api.png" alt="API" /></li>
                 </ul>
         </article>
         <article class="information">
             <h3 class="active" id="projects">projects</h3>
-            <p class="bold">Hi! My name is Leon, and I'm a full-stack web developer.</p>
-            <p>Cras vitae augue volutpat risus gravida tincidunt. Suspendisse et tincidunt lorem. Praesent molestie mattis sem, rhoncus fermentum mi placerat ut. Etiam eu sapien lacus. Donec pretium cursus nisi, eu dictum purus efficitur quis. </p>
-            <p class="bold">Hi! My name is Leon, and I'm a full-stack web developer.</p>
-            <p>Cras vitae augue volutpat risus gravida tincidunt. Suspendisse et tincidunt lorem. Praesent molestie mattis sem, rhoncus fermentum mi placerat ut. Etiam eu sapien lacus. Donec pretium cursus nisi, eu dictum purus efficitur quis. </p>
-            <p class="bold">Hi! My name is Leon, and I'm a full-stack web developer.</p>
-            <p>Cras vitae augue volutpat risus gravida tincidunt. Suspendisse et tincidunt lorem. Praesent molestie mattis sem, rhoncus fermentum mi placerat ut. Etiam eu sapien lacus. Donec pretium cursus nisi, eu dictum purus efficitur quis. </p>
-            <p class="bold">Hi! My name is Leon, and I'm a full-stack web developer.</p>
-            <p>Cras vitae augue volutpat risus gravida tincidunt. Suspendisse et tincidunt lorem. Praesent molestie mattis sem, rhoncus fermentum mi placerat ut. Etiam eu sapien lacus. Donec pretium cursus nisi, eu dictum purus efficitur quis. </p>
-
+            <h4 class="project-name">Your Bookmarks</h4>
+            <h5 class="project-description">Keep up to tabs with your favorite websites</h5>
+            <img src="images/bookmark-app.png" alt="Your Bookmarks Screenshot" class="project-image" />
+            <div class="project-info">
+                <ul class="view-code">
+                    <li class="github-code"><a href="https://github.com/thinkful-ei-gecko/leon-dail-bookmarks-app"><img src="images/github-code.png" alt="View on Github" /></a></li>
+                    <li class="deploy-code"><a href="https://thinkful-ei-gecko.github.io/leon-dail-bookmarks-app/"><img src="images/eye.png" alt="View Deployment" /></a></li>
+                </ul>
+                <p>This web application allows a user to keep track of their favorite websites. The user can add, delete, and edit the bookmarked tabs, as well as display them by ranking.</p>
+                <ul class="skills">
+                    <li class="skill-html"><img src="images/html5.png" alt="HTML 5" /></li>
+                    <li class="skill-css"><img src="images/css.png" alt="CSS 3" /></li>
+                    <li class="skill-javascript"><img src="images/javascript.png" alt="JavaScript" /></li>
+                    <li class="skill-jQuery"><img src="images/jquery.png" alt="jQuery" /></li>
+                    <li class="skill-api"><img src="images/api.png" alt="API" /></li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+            <h4 class="project-name">Quiz Application</h4>
+            <h5 class="project-description">Test your knowledge about the quizmaker's choice!</h5>
+            <img src="images/got-app.png" alt="Quiz Application Screenshot" class="project-image" />
+            <div class="project-info">
+                <ul class="view-code">
+                    <li class="github-code"><a href="https://github.com/thinkful-ei-gecko/JamesJ-Leon-quiz-app"><img src="images/github-code.png" alt="View on Github" /></a></li>
+                    <li class="deploy-code"><a href="https://thinkful-ei-gecko.github.io/JamesJ-Leon-quiz-app/"><img src="images/eye.png" alt="View Deployment" /></a></li>
+                </ul>
+                <p>Although originally designed as a small and fun Game of Thrones quiz application, the questions and styles can be ported to any topic by editing the database. This application is fully robust, and the contents can be easily changed for a variety of quizzes.</p>
+                <ul class="skills">
+                    <li class="skill-html"><img src="images/html5.png" alt="HTML 5" /></li>
+                    <li class="skill-css"><img src="images/css.png" alt="CSS 3" /></li>
+                    <li class="skill-javascript"><img src="images/javascript.png" alt="JavaScript" /></li>
+                    <li class="skill-jQuery"><img src="images/jquery.png" alt="jQuery" /></li>
+            </ul>
+            </div>
         </article>
         <article class="information">
         <h3 class="active" id="contact">contact</h3>
