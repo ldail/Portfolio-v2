@@ -21,6 +21,13 @@ a {
 * {
   transition: .5s all;
 }
+
+.divider {
+  width: 80%;
+  background-color: #ffe83d;
+  height: 2px;
+  margin: 0 auto;
+}
 /* ------------------
 first page 
 ------------------*/
@@ -387,6 +394,7 @@ second desktop page
 
   .gold-divider.second {
     width: 50%;
+  
   }
 
   main.second {
@@ -407,6 +415,31 @@ second desktop page
     margin: 70px 0px;
   }
 
+  .project-info.second {
+    display:flex;
+    padding: 25px 100px;
+  }
+
+  .project-info .project-image-link {
+    flex: 1;
+    margin-left: 40px;
+  }
+
+  .project-info-text {
+    flex: 1;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .project-info .skills {
+    margin: 30px 0px;
+  }
+
+  h5.second {
+    margin-bottom: 20px;
+  }
   h3.second {
     font-weight: bolder;
     font-size: 80px;
@@ -415,5 +448,7 @@ second desktop page
 
   #final-links {
     width: 50%;
+    padding: 5px 0px;
+    margin: 0;
   }
 }
