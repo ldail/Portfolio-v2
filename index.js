@@ -26,8 +26,8 @@ function addMain(add) {
                     <h4 class="project-name">Your Bookmarks</h4>
                     <h5 class="project-description">Keep tabs of your favorite websites</h5>
                     <ul class="view-code">
-                        <li class="github-code"><a href="https://github.com/thinkful-ei-gecko/leon-dail-bookmarks-app"><img src="images/github-purple.png" alt="View on Github" /></a></li>
-                        <li class="deploy-code"><a href="https://thinkful-ei-gecko.github.io/leon-dail-bookmarks-app/"><img src="images/eye2.png" alt="View Deployment" /></a></li>
+                        <li class="github-code"><a target="_blank" href="https://github.com/thinkful-ei-gecko/leon-dail-bookmarks-app"><img src="images/github-purple.png" alt="View on Github" /></a></li>
+                        <li class="deploy-code"><a target="_blank" href="https://thinkful-ei-gecko.github.io/leon-dail-bookmarks-app/"><img src="images/eye2.png" alt="View Deployment" /></a></li>
                     </ul>
                     <p>This web application allows a user to keep track of their favorite websites. The user can add, delete, and edit the bookmarked tabs, as well as display them by ranking.</p>
                     <ul class="skills">
@@ -38,7 +38,7 @@ function addMain(add) {
                         <li class="skill-api"><img src="images/api.png" alt="API" /></li>
                     </ul>
                 </div>
-                <a href="https://thinkful-ei-gecko.github.io/leon-dail-bookmarks-app/" class="project-image-link"><img src="images/bookmark-app.png" alt="Your Bookmarks Screenshot" class="project-image" /></a>
+                <a target="_blank" href="https://thinkful-ei-gecko.github.io/leon-dail-bookmarks-app/" class="project-image-link"><img src="images/bookmark-app.png" alt="Your Bookmarks Screenshot" class="project-image" /></a>
             </div>
 
             <div class="divider"></div>
@@ -48,8 +48,8 @@ function addMain(add) {
                     <h4 class="project-name">Quiz Application</h4>
                     <h5 class="project-description">Test your knowledge about the quizmaker's choice!</h5>
                     <ul class="view-code">
-                        <li class="github-code"><a href="https://github.com/thinkful-ei-gecko/JamesJ-Leon-quiz-app"><img src="images/github-purple.png" alt="View on Github" /></a></li>
-                        <li class="deploy-code"><a href="https://thinkful-ei-gecko.github.io/JamesJ-Leon-quiz-app/"><img src="images/eye2.png" alt="View Deployment" /></a></li>
+                        <li class="github-code"><a target="_blank" href="https://github.com/thinkful-ei-gecko/JamesJ-Leon-quiz-app"><img src="images/github-purple.png" alt="View on Github" /></a></li>
+                        <li class="deploy-code"><a target="_blank" href="https://thinkful-ei-gecko.github.io/JamesJ-Leon-quiz-app/"><img src="images/eye2.png" alt="View Deployment" /></a></li>
                     </ul>
                     <p>Although originally designed as a small and fun Game of Thrones quiz application, the questions and styles can be ported to any topic by editing the database. This application is fully robust, and the contents can be easily changed for a variety of quizzes.</p>
                     <ul class="skills">
@@ -59,7 +59,7 @@ function addMain(add) {
                         <li class="skill-jQuery"><img src="images/jquery.png" alt="jQuery" /></li>
                     </ul>
                 </div>
-                <a href="https://thinkful-ei-gecko.github.io/JamesJ-Leon-quiz-app/" class="project-image-link"><img src="images/got-app.png" alt="Quiz Application Screenshot" class="project-image" /></a>
+                <a target="_blank" href="https://thinkful-ei-gecko.github.io/JamesJ-Leon-quiz-app/" class="project-image-link"><img src="images/got-app.png" alt="Quiz Application Screenshot" class="project-image" /></a>
             </div>
         </article>
         <article class="information">
@@ -68,17 +68,17 @@ function addMain(add) {
     </article>
     <footer id="final-links">
         <ul id="contact-links">
-            <li id="github-link"><a href="https://github.com/ldail"><img src="images/github.png" alt="GitHub" /></a></li>
-            <li id="linkedin-link"><a href="#"><img src="images/linkedin.png" alt="LinkedIn" /></a></li>
-            <li id="email-link"><a href="mailto:leondailofficial@gmail.com"><img src="images/email.png" alt="Email" /></a></li>
+            <li id="github-link"><a target="_blank" href="https://github.com/ldail"><img src="images/github.png" alt="GitHub" /></a></li>
+            <li id="linkedin-link"><a target="_blank" href="#"><img src="images/linkedin.png" alt="LinkedIn" /></a></li>
+            <li id="email-link"><a target="_blank" href="mailto:leondailofficial@gmail.com"><img src="images/email.png" alt="Email" /></a></li>
         </ul>
-    <img src="images/easteregg.png" id="easter-egg" alt="easter egg" />
+    <!-- <img src="images/easteregg.png" id="easter-egg" alt="easter egg" /> -->
     </footer>
-    <div id="easter-div">
+    <!-- <div id="easter-div">
     <h5>You found the secret easter egg!</h5>
     <h6>Click below to activate!</h6>
     <img src="images/easteregg.png" id="second-easter-egg" alt="easter egg" />
-    </div>`
+    </div> -->`
     );
     $('main').fadeIn('slow');
     $('.inactive').text('projects');
