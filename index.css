@@ -19,7 +19,7 @@ a {
 }
 
 * {
-  transition: .5s all;
+  /* transition: .2s all; */
 }
 
 .divider {
@@ -321,8 +321,9 @@ tablet version
 @media screen and (min-width: 768px) {
 
   html {
-    background: no-repeat center center fixed;
+    background: repeat center center fixed;
     background-image: radial-gradient(#6387c2,#49648f);
+    /* background-image: url(images/bluebackground.jpg); */
     background-size: cover;
   }
 
